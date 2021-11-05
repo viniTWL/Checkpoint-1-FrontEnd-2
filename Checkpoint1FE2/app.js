@@ -1,4 +1,7 @@
-btn = document.querySelector('#btnSubmit');
+    // Variaveis dos botões submit e reset
+
+btnSub = document.querySelector('#btnSubmit');
+btnRes = document.querySelector('#btnReset');
 
     // Selecionando as variaves do HTML pelo ID
 
@@ -7,18 +10,19 @@ let desc = document.querySelector('#descricao');
 let image = document.querySelector('#url');
 let cardGrid = document.querySelector('#card-grid');
 
-    // Evento do Botão, a cada clique criará uma nova div
-btn.addEventListener('click', (load) => {
-        
-        // Criando os elementos que irão compor a página
+    // Evento do Botão submit, a cada clique criará uma nova div
 
-let card = document.createElement('div');
-let cardTitle = document.createElement('h2');
-let divImg = document.createElement('div');
-let img = document.createElement('img');
-let cardParagraph = document.createElement('p');
+btnSub.addEventListener('click', (load) => {
 
-        // Pegando o valor do input radio que está marcado
+    // Criando os elementos que irão compor a página
+
+    let card = document.createElement('div');
+    let cardTitle = document.createElement('h2');
+    let divImg = document.createElement('div');
+    let img = document.createElement('img');
+    let cardParagraph = document.createElement('p');
+
+    // Pegando o valor do input radio que está marcado e o coloca no array options
 
 let options = [];
 
@@ -41,9 +45,11 @@ cardParagraph.innerText = desc.value;
 
         // Condição caso um dos campos não estejam preenchidos
 
-if(title.value == "" || image.value == "" || desc.value == ""){
+if(title.value == "" || image.value == "" || desc.value == "" || options[0] == undefined){
         alert('Faltam campos a ser preenchidos!')
         }
+
+        // Caso todos estejam, colocará todas as informações dos inputs no card
 else{
         cardGrid.appendChild(card);
         divImg.appendChild(img);
@@ -56,3 +62,15 @@ else{
 
     load.preventDefault();
 });
+
+        // Evento do botão Reset, irá excluir o último card criado
+
+btnRes.addEventListener('click', reset =>{
+
+    let last = document.getElementById('card-grid');
+
+        // Selecionando o último filho da div card-grid, e excluindo
+
+    last.removeChild(last.lastChild);
+}
+)
