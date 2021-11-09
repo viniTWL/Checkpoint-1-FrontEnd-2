@@ -23,7 +23,7 @@
             <form action="#" method="get">
                 <input type="text" name="nome-imagem" id="nome-imagem" placeholder="Nome do Jogador">
                 <input type="text" name="descricao" id="descricao" placeholder="Descrição do Craque">
-                <input name="url" id="url" placeholder="URL da imagem">
+                <input type="url" name="url" id="url" placeholder="URL da imagem">
 
                 <input type="radio" name="position" id="striker" value="Atacante">
                 <label for="striker">ATACANTE</label>
@@ -33,6 +33,9 @@
 
                 <input type="radio" name="position" id="defender" value="Zagueiro">
                 <label for="defender">ZAGUEIRO</label>
+
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">CONVOCADO</label>
 
                 <button name="btnSubmit" type="submit" id="btnSubmit">Criar</button>
                 <button name="btnReset" type="reset" id="btnReset">Excluir</button>
