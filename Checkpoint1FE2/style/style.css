@@ -104,3 +104,36 @@ form button{
     margin: 0 auto;
     clear: both;
 }
+
+@media only screen and (max-device-width: 900px) {
+    .cabecalho { width:600px; }
+    }
+
+@media only screen and (max-device-width: 700px) {
+    .cabecalho { width:400px; } ;
+    
+    }
+
+@media only screen and (max-device-width: 900px) {
+    .container { width:600px; }
+    }
+    
+@media only screen and (max-device-width: 700px) {
+    .container { width:400px; } 
+    }
+    
+@media only screen and (max-device-width: 900px) {
+        .grid { width:600px; }
+    }
+        
+@media only screen and (max-device-width: 700px) {
+        .grid { width:400px; } 
+    }
+
+@media only screen and (max-device-width: 900px) {
+        .rodape { width:600px; }
+    }
+        
+@media only screen and (max-device-width: 700px) {
+        .rodape  { width:400px; } 
+    }
