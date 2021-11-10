@@ -9,16 +9,33 @@ body{
     background-color:antiquewhite;
 }
 
+.cabecalho{
+    height: 130px;
+    width: auto;
+    background-color: indigo;
+    margin: 0 auto;
+}
+
 h1{
     text-align: center;
     font-size: 4rem;
 }
 
+.container{
+    height: 620px;
+    background-color: gray;
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+}
+
 form{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     margin-top: 30px;
+    margin-left: 20px;
+    width: 300px;
 }
 
 form input{
@@ -48,13 +65,23 @@ form button{
     background-color:rgba(214, 55, 55, 0.986);
 }
 
+.grid{
+    height: 620px;
+    width: 1360px;
+    margin-right: 20px;
+    float: right;
+    background-color: red;
+}
 
 .card-grid{
+    margin-top: 30px;
+    margin-left: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top:40px;
     text-align: center;
+    width: 1200px;
+    height: 580px;
 }
 
 .card img{
@@ -62,3 +89,10 @@ form button{
     width: 90%;
 }
 
+.rodape{
+    background-color: blue;
+    height: 126px;
+    widht: auto;
+    margin: 0 auto;
+    clear: both;
+}

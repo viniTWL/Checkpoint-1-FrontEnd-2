@@ -13,37 +13,44 @@
 </head>
 <body>
     <main>
+        <div class="cabecalho">
+            <header>
+                <h1>Crie um mural de seus jogadores Favoritos!</h1>
+            </header>
+        </div>
 
-        <header>
-            <h1>Crie um mural de seus jogadores Favoritos!</h1>
-        </header>
-
-        <div class="container"></div>
-
+        <div class="container">
             <form action="#" method="get">
                 <input type="text" name="nome-imagem" id="nome-imagem" placeholder="Nome do Jogador">
                 <input type="text" name="descricao" id="descricao" placeholder="Descrição do Craque">
                 <input type="url" name="url" id="url" placeholder="URL da imagem">
-
+                
                 <input type="radio" name="position" id="striker" value="Atacante">
                 <label for="striker">ATACANTE</label>
-
+                
                 <input type="radio" name="position" id="midfilder" value="Meio Campo">
                 <label for="midfilder">MEIO CAMPO</label>
-
+                
                 <input type="radio" name="position" id="defender" value="Zagueiro">
                 <label for="defender">ZAGUEIRO</label>
-
+                
                 <input type="checkbox" name="checkbox" id="checkbox">
                 <label for="checkbox">CONVOCADO</label>
-
+                
                 <button name="btnSubmit" type="submit" id="btnSubmit">Criar</button>
                 <button name="btnReset" type="reset" id="btnReset">Excluir</button>
             </form>
+        </div>
 
+        <div class="grid">
             <div class="card-grid" id="card-grid"></div>
+        </div>
 
-            <footer></footer>
+        <div class="rodape">
+            <footer>
+
+            </footer>
+        </div>
     </main>
     
 </body>
