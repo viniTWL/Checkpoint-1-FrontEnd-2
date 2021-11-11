@@ -13,7 +13,10 @@ body{
 }
 
 .cabecalho{
-    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
     width: auto;
     background-color: #222831;
     margin: 0 auto;
@@ -22,6 +25,13 @@ body{
 h1{
     text-align: center;
     font-size: 4rem;
+    margin-top: 2rem;
+    color: red;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+    1px -1px 0px #FFF,                  
+    1px 0px 0px #FFF;
 }
 
 .container{
@@ -38,8 +48,8 @@ form{
     align-items: center;
     flex-direction: column;
     margin-top: 3rem;
-    margin-left: 3rem;
-    width: 70%;
+    padding: 0.5rem;
+    width: auto;
     color: #393E46;
     font-size: larger;
 }
@@ -51,18 +61,26 @@ form input{
     background-color: white;
     color: black solid; 
     width: 80%;
+    margin-bottom: 0.5rem;
 }
 
 form button{
     font-weight: bold;
     border: 3px solid;
     width: 200px;
-    margin-top: 10px;
+    margin-top: 0.5rem;
     padding: 0.2rem;
     background-color: transparent;
     color: #EEEEEE; 
 }
 
+.convocado{
+    color: green;
+    font-weight: bold;
+    text-shadow:
+    -0.2px -0.2px 0px #FFF, 
+    1px 0px 0px #FFF;
+}
 
 #btnSubmit:hover{
     cursor: pointer;
@@ -100,14 +118,6 @@ form button{
     width: 80%;
 }
 
-.rodape{
-    background-color: #222831;
-    height: 80%;
-    width: auto;
-    margin: 0 auto;
-    clear: both;
-}
-
 @media only screen and (max-device-width: 900px) {
     .cabecalho { width:600px; }
     }
@@ -131,12 +141,4 @@ form button{
         
 @media only screen and (max-device-width: 700px) {
         .grid { width:400px; } 
-    }
-
-@media only screen and (max-device-width: 900px) {
-        .rodape { width:600px; }
-    }
-        
-@media only screen and (max-device-width: 700px) {
-        .rodape  { width:400px; } 
     }
